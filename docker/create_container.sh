@@ -4,7 +4,8 @@ container_name="sabes_container_melodic"               # Change this to your con
 catkin_ws_path="/sabes_ws/darknet_ros_3d_v1/catkin_ws" # Change this to your catkin_ws path
 
 xhost +
-sudo docker run \
+#sudo 
+docker run \
     --net=host \
     --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
     --volume="$HOME/.Xauthority:/root/.Xauthority:rw" \
@@ -27,7 +28,8 @@ GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
 RESET='\033[0m'
 
-sudo docker exec -it $container_name bash -c "
+#sudo 
+docker exec -it $container_name bash -c "
     sudo apt update && sudo apt upgrade -y
     if [ -f '/opt/ros/melodic/setup.bash' ]; then
         source /opt/ros/melodic/setup.bash && \

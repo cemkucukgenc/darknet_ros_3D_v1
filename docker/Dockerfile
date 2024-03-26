@@ -6,15 +6,14 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Install the basic packages
 RUN apt-get update && apt-get upgrade -y && \
-    apt-get install -y git apt-utils python-catkin-tools wget libtool autoconf automake && \
+    apt-get install -y git apt-utils python3-catkin-tools wget libtool gedit && \
     rm -rf /var/lib/apt/lists/*
 
-# # Install the necessary ROS packages for the project
-# RUN apt-get update && apt-get upgrade -y && \
-#     apt-get install ros-melodic-depth-image-proc -y && \
-#     apt-get install ros-melodic-octomap ros-melodic-octomap-mapping -y && \
-#     apt-get install ros-melodic-ompl -y && \
-#     rm -rf /var/lib/apt/lists/*
+# Install the necessary ROS packages for the project
+RUN apt-get update && apt-get upgrade -y && \
+    apt-get install ros-melodic-cv-bridge ros-melodic-image-transport ros-melodic-tf ros-melodic-ddynamic-reconfigure ros-melodic-diagnostic-updater -y && \
+    apt-get install ros-melodic-realsense2-camera ros-melodic-realsense2-description -y && \
+    rm -rf /var/lib/apt/lists/*
 
 # For Intel GPU support
 RUN apt-get update && apt-get upgrade -y && \
