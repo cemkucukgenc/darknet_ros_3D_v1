@@ -1,6 +1,6 @@
 #!/bin/bash
 
-container_name="sabes_container_melodic"               # Change this to your container name
+container_name="sabes_container_noetic"               # Change this to your container name
 catkin_ws_path="/sabes_ws/darknet_ros_3d_v1/catkin_ws" # Change this to your catkin_ws path
 
 # ANSI escape codes for colors
@@ -11,15 +11,15 @@ RESET='\033[0m'
 
 #sudo
 docker exec -it $container_name bash -c "
-    if [ -f '/opt/ros/melodic/setup.bash' ]; then
-        source /opt/ros/melodic/setup.bash && \
+    if [ -f '/opt/ros/noetic/setup.bash' ]; then
+        source /opt/ros/noetic/setup.bash && \
         if [ \$? -eq 0 ]; then
             echo -e '${GREEN}ROS distro sourced as${RESET}' \$ROS_DISTRO 
         else
             echo -e '${RED}Failed to source ROS distro${RESET}' 
         fi
     else
-        echo -e '${YELLOW}/opt/ros/melodic/setup.bash does not exist yet. Skipping sourcing.${RESET}'
+        echo -e '${YELLOW}/opt/ros/noetic/setup.bash does not exist yet. Skipping sourcing.${RESET}'
     fi && \
     if [ -f '$catkin_ws_path/devel/setup.bash' ]; then
         source $catkin_ws_path/devel/setup.bash && \
