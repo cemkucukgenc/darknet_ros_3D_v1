@@ -45,9 +45,13 @@ For the installation of packages, basic tools are required.
 ```
 sudo apt install git apt-utils python3-catkin-tools wget libtool
 ```
+
+Basic ROS packages are required for the project
 ```
 sudo apt install ros-noetic-cv-bridge ros-noetic-image-transport ros-noetic-tf ros-noetic-ddynamic-reconfigure ros-noetic-diagnostic-updater
 ```
+
+Realsense2 is required for Intel D435 Camera
 ```
 sudo apt install ros-noetic-realsense2-camera ros-noetic-realsense2-description
 ```
