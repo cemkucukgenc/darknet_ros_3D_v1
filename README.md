@@ -31,7 +31,7 @@ source /opt/ros/noetic/setup.bash
  ```
 should be sourced in each terminal. To make it easier, it can be added to the `.bashrc` file for automatic sourcing. Details can be found in the `ROS Noetic` setup guide link. Sourcing `ROS Noetic` will no longer be mentioned in further steps.
 
-Bonus: If you have a different Linux or ROS distro than specified requirements, you may prefer to use a Docker container. To do that, check the `docker` folder.
+Bonus: If you have a different Linux or ROS distro than the specified requirements, you may prefer to use a Docker container. To do that, check the `docker` folder.
 
 ### 2.2. Installing dependencies <a name="installing_dependencies"></a>
 
@@ -46,17 +46,17 @@ For the installation of packages, basic tools are required.
 sudo apt install git apt-utils python3-catkin-tools wget libtool
 ```
 
-Basic ROS packages are required for the project
+Basic ROS packages are required for the project.
 ```
 sudo apt install ros-noetic-cv-bridge ros-noetic-image-transport ros-noetic-tf ros-noetic-ddynamic-reconfigure ros-noetic-diagnostic-updater
 ```
 
-Realsense2 is required for Intel D435 Camera
+Realsense2 is required for the Intel D435 Camera.
 ```
 sudo apt install ros-noetic-realsense2-camera ros-noetic-realsense2-description
 ```
 
-Check whether OpenCV version is greater than 4, ie OpenCV4 is installed
+Check whether OpenCV version is greater than 4, i.e. OpenCV4 is installed.
 ```
 pkg-config --modversion opencv4
 ```
@@ -97,5 +97,5 @@ source /sabes_ws/darknet_ros_3D_v1/catkin_ws/devel/setup.bash
 rostopic echo /objects_position/message
 ```
 
-If you encounter with issues on running, you can check this link
+If you encounter issues with running, you can check this link
 - https://github.com/leggedrobotics/darknet_ros/issues/381
