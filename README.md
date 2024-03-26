@@ -22,7 +22,7 @@ Setup is done according to the video in the following youtube link with the sour
 ### 2.1. System setup <a name="system_setup"></a>
 This project is developed for `Ubuntu 20.04` with `ROS Noetic`. Be sure your system has the same configuration. You can check the following links to install them:
 
- - `Ubuntu 20.04` setup guide link: https://releases.ubuntu.com/bionic/ 
+ - `Ubuntu 20.04` setup guide link: https://releases.ubuntu.com/focal/ 
  - `ROS Noetic` setup guide link: https://wiki.ros.org/noetic/Installation/Ubuntu 
 
  It is required that the `ROS Noetic` should be sourced in each terminal to run the simulation as mentioned in the `ROS Noetic` setup guide link. To do that,
