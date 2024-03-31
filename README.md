@@ -53,7 +53,7 @@ sudo apt install ros-noetic-cv-bridge ros-noetic-image-transport ros-noetic-tf r
 
 Realsense2 is required for the Intel D435 Camera.
 ```
-sudo apt install ros-noetic-realsense2-camera ros-noetic-realsense2-description
+sudo apt install ros-noetic-realsense2-camera ros-noetic-realsense2-description ros-noetic-rgbd-launch
 ```
 
 Check whether OpenCV version is greater than 4, i.e. OpenCV4 is installed.
