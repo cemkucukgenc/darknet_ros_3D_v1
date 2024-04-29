@@ -101,3 +101,6 @@ rostopic echo /objects_position/message
 
 Bonus: Bookmarked issue pages that helped me to debug
 - https://github.com/leggedrobotics/darknet_ros/issues/381
+- https://github.com/leggedrobotics/darknet_ros/issues/25
+- https://stackoverflow.com/questions/55605052/why-is-the-output-video-too-slow-in-darknet
+- https://github.com/pjreddie/darknet/issues/80 
