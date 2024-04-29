@@ -1,12 +1,14 @@
 # Human and Object Detection with Intel D435 Depth Camera
 
 ### Table of contents
-1. [Introduction](#introduction)
-2. [Installation guide](#installation_guide)
-    1. [System setup](#system_setup)
-    2. [Installing dependencies](#installing_dependencies)
-    3. [Building project](#building_project)
-3. [Launching project](#launching_project)
+- [Human and Object Detection with Intel D435 Depth Camera](#human-and-object-detection-with-intel-d435-depth-camera)
+    - [Table of contents](#table-of-contents)
+  - [1. Introduction ](#1-introduction-)
+  - [2. Installation guide ](#2-installation-guide-)
+    - [2.1. System setup ](#21-system-setup-)
+    - [2.2. Installing dependencies ](#22-installing-dependencies-)
+    - [2.3. Building project ](#23-building-project-)
+  - [3. Launching project ](#3-launching-project-)
 
 ## 1. Introduction <a name="introduction"></a>
 
@@ -97,5 +99,5 @@ source /sabes_ws/darknet_ros_3D_v1/catkin_ws/devel/setup.bash
 rostopic echo /objects_position/message
 ```
 
-If you encounter issues with running, you can check this link
+Bonus: Bookmarked issue pages that helped me to debug
 - https://github.com/leggedrobotics/darknet_ros/issues/381
