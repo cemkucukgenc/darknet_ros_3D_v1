@@ -8,6 +8,7 @@
     <arg name="depth_width" value="640" />
     <arg name="depth_height" value="480" />
     <arg name="depth_fps" value="30" />
+    <arg name="initial_reset" value="true" />
    </include>
 
    <include file="$(find darknet_ros)/launch/darknet_ros.launch"/>
